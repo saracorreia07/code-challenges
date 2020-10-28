@@ -18,10 +18,8 @@ public class MonkeyTrouble {
     public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
 
         if((aSmile && bSmile) || (!aSmile && !bSmile)) {
-            System.out.println(true);
             return true;
         }
-        System.out.println(false);
         return false;
     }
 }

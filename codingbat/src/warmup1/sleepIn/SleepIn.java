@@ -19,10 +19,8 @@ public class SleepIn {
     public static boolean sleepIn(boolean weekday, boolean vacation) {
 
         if(!weekday || vacation){
-            System.out.println(true);
             return true;
         }
-        System.out.println(false);
         return false;
     }
 }
