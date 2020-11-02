@@ -13,12 +13,30 @@ public class StringMatch {
         stringMatch("xxcaazz", "xxbaaz"); //3
         stringMatch("abc", "abc"); //2
         stringMatch("abc", "axc"); //0
+        stringMatch("he", "hello");
     }
 
     public static int stringMatch(String a, String b) {
 
         int count = 0;
+        String c = "";
 
+        if(a.length() < b.length()){
+            c = a;
+        } else {
+            c = b;
+        }
+
+        for(int i = 0; i < c.length() - 1; i++){
+
+            String result = a.substring(i, i + 2);
+
+            String result2 = b.substring(i, i + 2);
+
+            if ((result.equals(result2))) {
+                count++;
+            }
+        }
         return count;
     }
 }
