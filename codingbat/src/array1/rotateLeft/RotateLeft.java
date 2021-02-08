@@ -5,4 +5,10 @@ public class RotateLeft {
     /*
     CHALLENGE
      */
+
+    public static void main(String[] args) {
+
+
+    }
+    
 }
